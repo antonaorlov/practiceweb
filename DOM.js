@@ -11,51 +11,58 @@
 // document.querySelectorAll("li")[1].parentElement.parentElement
 
 //DOM EVENTS
-document.getElementsByTagName("button"); 
-var button=document.getElementsByTagName("button")[0];//this is an array
-button.addEventListener("click", function(){
-    console.log("Click!!!");
+// document.getElementsByTagName("button"); 
+// var button=document.getElementsByTagName("button")[0];//this is an array
+// button.addEventListener("click", function(){
+//     console.log("Click!!!");
+// })
+
+// var button=document.getElementsByTagName("button")[1];//this is an array
+// button.addEventListener("mouseenter", function(){
+//     console.log("Click!!!");
+// })
+
+// //Click mouseenter mouseleave ...
+
+// var button1=document.getElementById("enter");
+// var input=document.getElementById("user-input");
+//var ul=document.querySelector("ul");
+
+// function inputLength(){
+//     return input.value.length;
+// }
+
+// function createListElement(){
+//     var li = document.createElement("li");
+//     li.appendChild(document.createTextNode(input.value));
+//     ul.appendChild(li);
+//     input.value="";
+// }
+
+// function addListAfterClick(){
+//     if(inputLength() > 0 ){
+//         createListElement();
+//     }
+// }
+
+// function addListAfterKeyPress(event){
+//     if(inputLength() > 0 && event.keyCode===13 ){
+//         createListElement();
+//     }
+// }
+
+// button1.addEventListener("click", addListAfterClick);
+
+// input.addEventListener("keypress", addListAfterKeyPress);
+
+
+//var li=document.getElementsByTagName("li")[0];
+
+var lis=document.getElementsByTagName("li")[0];
+lis.addEventListener("click",function(){
+    //lis.className.("done");
+    lis.classList.add("done");
 })
-
-var button=document.getElementsByTagName("button")[1];//this is an array
-button.addEventListener("mouseenter", function(){
-    console.log("Click!!!");
-})
-
-//Click mouseenter mouseleave ...
-
-var button1=document.getElementById("enter");
-var input=document.getElementById("user-input");
-var ul=document.querySelector("ul");
-
-function inputLength(){
-    return input.value.length;
-}
-
-function createListElement(){
-    var li = document.createElement("li");
-    li.appendChild(document.createTextNode(input.value));
-    ul.appendChild(li);
-    input.value="";
-}
-
-function addListAfterClick(){
-    if(inputLength() > 0 ){
-        createListElement();
-    }
-}
-
-function addListAfterKeyPress(event){
-    if(inputLength() > 0 && event.keyCode===13 ){
-        createListElement();
-    }
-}
-
-button1.addEventListener("click", addListAfterClick);
-
-input.addEventListener("keypress", addListAfterKeyPress);
-
-
 
 
 
